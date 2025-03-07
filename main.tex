@@ -1,0 +1,136 @@
+\documentclass{beamer}
+
+% Use a minimal theme
+\usetheme{Madrid}
+
+% Dark mode customization
+\usecolortheme{dove}
+\setbeamercolor{background canvas}{bg=black} % Black background
+\setbeamercolor{normal text}{fg=white} % White text
+\setbeamercolor{title}{fg=cyan} % Cyan title color
+\setbeamercolor{block title}{bg=gray, fg=white} % Block titles
+\setbeamercolor{block body}{bg=black, fg=white} % Block content
+\setbeamercolor{item}{fg=cyan} % Bullets in cyan
+\setbeamercolor{frametitle}{fg=cyan}
+
+% Title slide info
+\title{NeoVIM workshop}
+\author{Ivan Evdokimov}
+\date{\today}
+
+\begin{document}
+
+% Title slide
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% Outline
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+% Section 1
+\section{Introduction}
+\begin{frame}{WhatIsNeoVIM}
+    \frametitle{But what is "Neo" and "VI" and "M"?}
+    \begin{itemize}
+        \item "Vi" is the original editor.
+        \item "M" is the modification (improved).
+        \item "Neo" is yet another modification of the "VIM".
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{WhyUseNeoVIM}
+    \frametitle{Why bother with Neovim?}
+    \begin{itemize}
+        \item Very-very light and therefore fast.
+        \item Async loading of plugins makes it blazingly fast.
+        \item Having both hands on keyboard makes you even faster.
+        \item You really are in control of everything in your IDE.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{VimChallenges}
+    \frametitle{Why \textbf{not} to use NeoVIM?}
+    \begin{itemize}
+        \item It takes time and effort to build the muscle memory.
+        \item Requires tinkering and setting.
+        \item VIM-motions are supported in other editors (i.e. VScode, nano, etc.)
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{WhichNeoVIM}
+    \frametitle{Which VIM?}
+    \begin{itemize}
+        \item We will use NeoVIM.
+        \item The most recent iteration in the vim-family.
+        \item Community-driven.
+        \item \textsf{Lua} -- the programming language to support plugins for Neovim.
+    \end{itemize}
+\end{frame}
+
+% Blocks
+\section{Motions}
+\begin{frame}{Motions}
+    \frametitle{Motions}
+    \begin{itemize}
+        \item Horizontal: \textsf{h} = \leftarrow, \textsf{l} = \rightarrow.
+        \item Vertical: \textsf{j} = \uparrow, \textsf{k} = \downarrow.
+        \item You can combine them to jump several times, try: \textsf{2k},\textsf{2l}, etc.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{AdvancedHMotions}
+    \frametitle{Advanced Horizontal Motions}
+    \begin{itemize}
+        \item \textsf{w} jump to the \textbf{beginning} of the next token.
+        \item \textsf{e} jump to the \textbf{end} of the next token.
+        \item \textsf{b} jump to the \textbf{previous} token.
+        \item \textsf{\_} jump to the beginning of the line.
+        \item \textsf{\$} jump to the end of the line.
+        \item You can also combine those with numbers, try: \textsf{2b}, \textsf{5e}.
+    \end{itemize}
+\end{frame}
+
+\end{frame}
+\begin{frame}{AdvancedVMotions}
+    \frametitle{Advanced Vertical Motions}
+    \begin{itemize}
+        \item \textsf{Ctrl} + \textsf{u} jump 35 lines up.
+        \item \textsf{Ctrl} + \textsf{d} jump 35 lines down.
+        \item \textsf{\{} to go up to the next blank line.
+        \item \textsf{\}} to go down to the next blank line.
+        \item TIP: use \textsf{zz} to center screen around cursor.
+    \end{itemize}
+\end{frame}
+
+\section{Editing}
+\begin{frame}{EnterEditing}
+    \frametitle{Enter Editing Mode}
+    \begin{itemize}
+        \item \textsf{i} to \textsf{i}nsert before cursor.
+        \item \textsf{a} to insert \textsf{a}fter cursor.
+        \item \textsf{I} to \textsf{I}nsert at the beginnig of the line.
+        \item \textsf{A} to insert \textsf{a}t the end of the line.
+    \end{itemize}
+\end{frame}
+
+% Conclusion
+\section{Conclusion}
+\begin{frame}{Conclusion}
+    \begin{itemize}
+        \item Beamer themes are highly customizable.
+        \item Dark mode improves eye comfort in low-light environments.
+        \item Use contrast carefully to keep slides readable.
+    \end{itemize}
+\end{frame}
+
+% Thank You Slide
+\begin{frame}
+    \centering
+    {\Huge \textcolor{cyan}{Thank You!}}
+\end{frame}
+
+\end{document}
+
