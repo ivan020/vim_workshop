@@ -89,9 +89,27 @@
     NORMAL is the default vim mode.
     \begin{itemize}
         \item Can always use ESC or CTRL+C keys to return to NORMAL.
-        \item You normally use shortcuts in NORMAL mode. 
-        \item Commonly used: redo (u), motions (h,j,k,l).
-        \item 
+        \item Commonly used to: redo (u), motions (h,j,k,l).
+        \item Also used for file navigation:
+            \begin{itemize}
+                \item \textsf{M} move cursor to middle.
+                \item \textsf{L} move cursor to the bottom of the display.
+                \item \textsf{H} move cursot to the head of the display.
+                \item \textsf{zz} to center a screen.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{COMMAND}
+    \frametitle{COMMAND}
+    COMMAND is used to run commands.
+    You type `:' to start a command, with most used:
+    \begin{itemize}
+        \item \textsf{:w}rite a file.
+        \item \textsf{:w filename.txt} write a file under `filename.txt' filename.
+        \item \textsf{:q} to exit a file.
+        \item \textsf{:q!} to exit without save.
+        \item \textsf{:wq} to save and exit.
     \end{itemize}
 \end{frame}
 
