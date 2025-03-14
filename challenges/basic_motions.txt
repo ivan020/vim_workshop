@@ -1,10 +1,18 @@
-Reach the end of the 
-block using only h,j,k,l;
+Make the full circle
+using only h,j,k,l motions;
+
+Try to combine it with numbers, i.e. 3l, 2j, etc.
 
 ██████████████████████
-█    Finish|Start →  █
+█    Finish|Start->  █
 █       ████████     █
 █                    █
 ██████████████████████
 
-
+Once you feel confident, try the same route 
+but other way around (counter-clockwise);
+██████████████████████
+█   <- Start|Finish  █
+█       ████████     █
+█                    █
+██████████████████████
