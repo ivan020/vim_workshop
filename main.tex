@@ -140,6 +140,16 @@
     \end{itemize}
 \end{frame}
 
+\begin{frame}{MoreAdvancedHMotions}
+    \frametitle{More Advanced Horizontal Motions}
+    \begin{itemize}
+        \item \textsf{f} + `;' to jump to the next `;' char (can be replaced with any other char).
+        \item \textsf{t} + `;' to jump the char before the `;'.
+        \item in these modes, you can type `;' to jump to the next occurace of this character.
+        \item \textsf{F} and \textsf{T} for the backward search.
+    \end{itemize}
+\end{frame}
+
 \end{frame}
 \begin{frame}{AdvancedVMotions}
     \frametitle{Advanced Vertical Motions}
@@ -160,16 +170,41 @@
         \item \textsf{a} to insert \textsf{a}fter cursor.
         \item \textsf{I} to \textsf{I}nsert at the beginnig of the line.
         \item \textsf{A} to insert \textsf{a}t the end of the line.
+        \item \textsf{o} to start editing from the new line.
+        \item \textsf{O} to start editing from the previous line.
+        \item \textsf{Ctrl} + \textsf{C} or \textsf{Esc} to exit to normal mode.
     \end{itemize}
 \end{frame}
 
+\section{Visual}
+\begin{frame}{VisualMode}
+    \frametitle{Visual Mode}
+    \begin{itemize}
+        \item commonly used to edit a document.
+        \item \textsf{v} in normal mode to enter the visual mode.
+        \item you can use a number of shortcuts to select a token.
+        \item \textsf{viw} to highlight a word.
+        \item \textsf{V} to highlight the whole line.
+    \end{itemize}
+\end{frame}
+
+\section{Tips}
+\begin{frame}{VimTips}
+    \frametitle{Useful Tips}
+    \begin{itemize}
+        \item there are some very useful vim-combinations that we can use.
+        \item \textsf{diw} delete a token, stay in normal mode after.
+        \item \textsf{ciw} delete a token and enter the editing mode.
+        \item \textsf{y} will copy under the cursor.
+        \item \textsf{p} will past what you copied.
+        \item \textsf{/} to find a token in the document.
+    \end{itemize}
+\end{frame}
 % Conclusion
 \section{Conclusion}
 \begin{frame}{Conclusion}
     \begin{itemize}
-        \item Beamer themes are highly customizable.
-        \item Dark mode improves eye comfort in low-light environments.
-        \item Use contrast carefully to keep slides readable.
+        \item Vim is giga-cool.
     \end{itemize}
 \end{frame}
 
