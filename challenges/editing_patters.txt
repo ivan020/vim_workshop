@@ -1,0 +1,25 @@
+This challenge is designed for you to check how 'diw'/'ciw' related commands work.
+
+1. We work from Neovim, so remove "vim" and type "Neovim" in the following sentence.
+Try using the 'ciw' motion.
+=========================================
+    Hello, world! Welcome to Vim motions.
+========================================
+
+2. Use 'caw' to remove 'This_is_a_test' and enter the editing mode. Write the same pattern without '_'.
+===========================================
+    This_is_a_test with various-word separators.
+===========================================
+
+3. Use 'diw' to remove 'various-word' and enter the editing mode. Write the same pattern without '-'.
+Use '.' to repeat 'diw' motion. 
+===========================================
+    This is a test with various-word separators.
+===========================================
+
+4. In the following two examples, try using 'daw' and 'daW', notice the difference?
+====================================
+Vim_is_awesome; mastering_it_is_fun.
+Vim_is_awesome; mastering_it_is_fun.
+===================================
+
