@@ -1,0 +1,11 @@
+This dialogue makes no sense because of exclamation mark, so lets fix it.
+REMEMBER the command (in NORMAL mode) is '/'.
+
+============================================================
+Person 1: Hey, do you want to grab lunch later!
+Person 2: I’d love to! What time are you thinking!
+Person 1: How about 1 PM!
+Person 2: Sounds perfect! Where should we go!
+Person 1: I was thinking about that new sushi place!
+Person 2: Oh, I’ve heard great things about it! Let’s do it!
+============================================================
