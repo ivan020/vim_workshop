@@ -8,12 +8,12 @@
 \setbeamercolor{background canvas}{bg=black} % Black background
 \setbeamercolor{normal text}{fg=white} % White text
 \setbeamercolor{title}{fg=cyan} % Cyan title color
-\setbeamercolor{tableofcontents}{fg=cyan}
 \setbeamercolor{block title}{bg=gray, fg=white} % Block titles
 \setbeamercolor{block body}{bg=black, fg=white} % Block content
 \setbeamercolor{item}{fg=cyan} % Bullets in cyan
 \setbeamercolor{frametitle}{fg=cyan}
-
+\setbeamercolor{section in toc}{fg=cyan}
+\setbeamercolor{subsection in toc}{fg=cyan}
 % Title slide info
 \title{NeoVIM workshop}
 \author{Ivan Evdokimov}
@@ -28,7 +28,12 @@
 
 % Outline
 \begin{frame}{Outline}
+    \begingroup
+    \setbeamercolor{section number projected}{fg=cyan} % If section numbers exist
+    \setbeamercolor{section in toc}{fg=cyan}
+    \setbeamercolor{subsection in toc}{fg=cyan}
     \tableofcontents
+    \endgroup
 \end{frame}
 
 % Section 1
@@ -72,7 +77,7 @@
 \end{frame}
 
 % Blocks
-\section{Command}
+\section{Modes}
 \begin{frame}{CommandMode}
     \frametitle{Modes}
     Vim has 4 key modes:
@@ -205,7 +210,6 @@
     \end{itemize}
 \end{frame}
 
-\section{Tips}
 \begin{frame}{VimTips}
     \frametitle{Copy-Paste}
     \begin{itemize}
@@ -215,7 +219,6 @@
     \end{itemize}
 \end{frame}
 
-\section{Tips}
 \begin{frame}{VimTips}
     \frametitle{Search and Replace}
     \begin{itemize}
@@ -226,7 +229,6 @@
     \end{itemize}
 \end{frame}
 
-\section{Tips}
 \begin{frame}{VimTips}
     \frametitle{Search and Replace with Regex}
     \begin{itemize}
