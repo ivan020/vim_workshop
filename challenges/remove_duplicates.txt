@@ -1,0 +1,10 @@
+Let's remove duplicates duplicates in the following text using vim+regex.
+
+=======================================================
+The the sun shines brightly brightly in in the the sky.  
+She she went went to to the the market.  
+I I love love love eating eating pizza pizza.  
+The The cat cat sat sat on on the the mat mat.  
+He he said said hello hello to to everyone everyone.  
+This this is is a a simple simple test test.  
+=======================================================

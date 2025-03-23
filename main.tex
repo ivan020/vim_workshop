@@ -218,8 +218,8 @@
     \frametitle{Search and Replace}
     \begin{itemize}
         \item you can search and replace using a combination in the normal mode.
-        \item \textsf{:/!/?/g} will replace all `!' with `?', globally.
-        \item \textsf{:/!/?/gc} will replace and ask you whether you want to replace.
+        \item \textsf{:\%s/!/?/g} will replace all `!' with `?', globally.
+        \item \textsf{:\%s/!/?/gc} will replace and ask you whether you want to replace.
         \item TRY: the `./searchAndReplace.txt' for exercise.
     \end{itemize}
 \end{frame}
@@ -228,10 +228,9 @@
 \begin{frame}{VimTips}
     \frametitle{Search and Replace with Regex}
     \begin{itemize}
-        \item you can search and replace using a combination in the normal mode.
-        \item \textsf{:/!/?/g} will replace all `!' with `?', globally.
-        \item \textsf{:/!/?/gc} will replace and ask you whether you want to replace.
-        \item TRY: the `./searchAndReplace.txt' for exercise.
+        \item regex allows you to make a search more complex.
+        \item for instance, you can lookup duplicates, digits, upper/lower/CamelCase, etc.
+        \item let us try to remove a some duplicates in `./challenges/remove\_duplicates.txt'
     \end{itemize}
 \end{frame}
 

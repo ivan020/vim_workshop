@@ -1,0 +1,19 @@
+Let's remove duplicates duplicates in the following text using vim+regex.
+
+:%s/\v<(\w+)>\s+\1/\1/g
+
+tips: 
+1. Enter the search mode (:%s/)
+2. \v to let the program know that you want a magic (regex) search.
+3. <(\w+)> to let it know that you are looking for a word.
+4. \s+\1 you are looking the same, one token after a space.
+5. replace the same token (a duplicate) with only one single occurance.
+
+=======================================================
+The the sun shines brightly brightly in in the the sky.  
+She she went went to to the the market.  
+I I love love love eating eating pizza pizza.  
+The The cat cat sat sat on on the the mat mat.  
+He he said said hello hello to to everyone everyone.  
+This this is is a a simple simple test test.  
+=======================================================
