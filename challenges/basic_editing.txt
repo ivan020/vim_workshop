@@ -1,0 +1,15 @@
+You can enter the INSERT (edit) mode by pressing 'i'.
+You'll start typing exactly where your cursor is.
+
+===================================================================================
+Press 'i' and insert "hello, world!" at the end of this line, inside the quotes:"".
+'I' and type 'Press ' at the beginning of this line.
+===================================================================================
+
+Another way to enter the INSERT mode is by pressing 'a'.
+You'll start typing at the next place of where your cursor.
+
+=======================================================================
+Move your cursor to the '>' and type 'Hello, world!' -->!
+Press 'A' to enter the insert mode and put '!' at the end of this line: 
+=======================================================================
