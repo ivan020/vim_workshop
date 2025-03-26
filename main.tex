@@ -188,6 +188,7 @@
         \item \highlight{o} to start editing from the new line.
         \item \highlight{O} to start editing from the previous line.
         \item \highlight{Ctrl} + \highlight{C} or \highlight{Esc} to exit to normal mode.
+        \item \highlight{x} to remove a character (backspace).
         \item TRY: do the challenge `./challenges/basic\_editing.txt`.
     \end{itemize}
 \end{frame}
@@ -234,11 +235,11 @@
 \begin{frame}{VimTips}
     \frametitle{Copy/Cut and paste by paragraph}
     \begin{itemize}
-        \item Often, you need to remove the whole block (paragraph) .
-        \item \highlight{dip} delete a token, stay in normal mode after.
-        \item \highlight{cip} delete a token and enter the editing mode.
-        \item \highlight{daP} delets a token and its surrounding to the next token.
-        \item \highlight{caP} deletes a token and its surrounding to the next token, entering the edit mode.
+        \item Often, you need to remove the whole block (paragraph).
+        \item \highlight{dip} delete a \textsf{p}aragraph, stay in normal mode after.
+        \item \highlight{cip} delete a \textsf{p}aragraph and enter the editing mode.
+        \item \highlight{daP} delets a \textsf{p}aragraph and its surrounding to the next token.
+        \item \highlight{caP} deletes a \textsf{p}aragraph and its surrounding to the next token, entering the edit mode.
         \item TRY: use `./challenges/blockRemoval.txt' to checkout these commands.
     \end{itemize}
 \end{frame}
@@ -249,7 +250,7 @@
         \item you can search and replace using a combination in the normal mode.
         \item \highlight{:\%s/!/?/g} will replace all `!' with `?', globally.
         \item \highlight{:\%s/!/?/gc} will replace and ask you whether you want to replace.
-        \item TRY: the `./searchAndReplace.txt' for exercise.
+        \item TRY: the `./challenges/searchAndReplace.txt' for exercise.
     \end{itemize}
 \end{frame}
 

@@ -1,0 +1,32 @@
+the 'p' in combination with some motions allows you to highlight the whole paragraph.
+In Neovim, the block is the multiline sequence of tokens in between two blank lines.
+
+===================================
+
+Highlight this paragraph with 'vap'
+combination.
+
+Press Esc to cancel highlight.
+====================================
+
+You can also remove paragraphs by using 'dap' motion.
+Try replacing the two paragraphs.
+====================================
+
+This paragraph is out of place.
+This should be the last paragraph.
+
+This paragraph is also out of place.
+It should be the at the top.
+
+====================================
+
+You can also remove the paragraph and enter the insert mode using 'cip'.
+
+====================================
+
+Remove this paragraph.
+Leave your favourite quote here.
+Or whatever you want...
+
+====================================
