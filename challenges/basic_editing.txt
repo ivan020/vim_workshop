@@ -13,3 +13,12 @@ You'll start typing at the next place of where your cursor.
 Move your cursor to the '>' and type 'Hello, world!' -->!
 Press 'A' to enter the insert mode and put '!' at the end of this line: 
 =======================================================================
+
+Finally, you can use 'o' to start insertion in the next line.
+
+==============================================================
+Press 'o' and start type 'Hello, world!' in the next line:
+
+
+Press 'O' and type 'Hello, world!' again in the previous line.
+==============================================================
