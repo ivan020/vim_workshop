@@ -14,6 +14,8 @@
 \setbeamercolor{frametitle}{fg=cyan}
 \setbeamercolor{section in toc}{fg=cyan}
 \setbeamercolor{subsection in toc}{fg=cyan}
+\usepackage{xcolor}
+\newcommand{\highlight}[1]{\textcolor{cyan}{\textsf{#1}}}
 % Title slide info
 \title{Neovim workshop}
 \author{Ivan Evdokimov}
@@ -62,7 +64,7 @@
     \begin{itemize}
         \item It takes time and effort to build the muscle memory.
         \item Requires tinkering and setting.
-        \item VIM-motions are supported in other editors (i.e. VScode, nano, etc.)
+        \item VIM-motions are supported in other editors (i.e. VScode, nano, sublime, etc.)
     \end{itemize}
 \end{frame}
 
@@ -72,7 +74,7 @@
         \item We will use Neovim.
         \item The most recent iteration in the vim-family.
         \item Community-driven.
-        \item \textsf{Lua} -- the programming language to support plugins for Neovim.
+        \item \highlight{Lua} -- the programming language to support plugins for Neovim.
     \end{itemize}
 \end{frame}
 
@@ -97,10 +99,10 @@
         \item Commonly used to: redo (u), motions (h,j,k,l).
         \item Also used for file navigation:
             \begin{itemize}
-                \item \textsf{M} move cursor to middle.
-                \item \textsf{L} move cursor to the bottom of the display.
-                \item \textsf{H} move cursot to the head of the display.
-                \item \textsf{zz} to center a screen.
+                \item \highlight{M} move cursor to middle.
+                \item \highlight{L} move cursor to the bottom of the display.
+                \item \highlight{H} move cursot to the head of the display.
+                \item \highlight{zz} to center a screen.
             \end{itemize}
     \end{itemize}
 \end{frame}
@@ -110,14 +112,14 @@
     COMMAND is used to run commands.
     You type `:' to start a command, with most used:
     \begin{itemize}
-        \item \textsf{:w} to write a file.
-        \item \textsf{:w filename.txt} write a file under `filename.txt' filename.
-        \item \textsf{:q} to exit a file.
-        \item \textsf{:q!} to exit without save.
-        \item \textsf{:wq} to save and exit.
-        \item \textsf{:e filename2.txt} to open `filename2.txt' from withing current editor.
-        \item \textsf{:vsplit} to split current editor (vertically).
-        \item \textsf{:Ex} to open the current tree buffer.
+        \item \highlight{:w} to write a file.
+        \item \highlight{:w filename.txt} write a file under `filename.txt' filename.
+        \item \highlight{:q} to exit a file.
+        \item \highlight{:q!} to exit without save.
+        \item \highlight{:wq} to save and exit.
+        \item \highlight{:e filename2.txt} to open `filename2.txt' from withing current editor.
+        \item \highlight{:vsplit} to split current editor (vertically).
+        \item \highlight{:Ex} to open the current tree buffer.
     \end{itemize}
 \end{frame}
 
@@ -127,25 +129,25 @@
     \begin{itemize}
         \item The key movements are:
             \begin{itemize}
-                \item \textsf{h} to move left.
-                \item \textsf{l} to move right.
-                \item \textsf{j} to move up. 
-                \item \textsf{k} to move down.
+                \item \highlight{h} to move left.
+                \item \highlight{l} to move right.
+                \item \highlight{j} to move up. 
+                \item \highlight{k} to move down.
             \end{itemize}
-        \item You can combine them to jump several times, try: \textsf{2k},\textsf{2l}, etc.
-        \item TRY: do the challenge `basic\_motions.txt'.
+        \item You can combine them to jump several times, try: \highlight{2k},\highlight{2l}, etc.
+        \item TRY: do the challenge `./challenges/basic\_motions.txt'.
     \end{itemize}
 \end{frame}
 
 \begin{frame}{AdvancedHMotions}
     \frametitle{Advanced Horizontal Motions}
     \begin{itemize}
-        \item \textsf{w} jump to the \textbf{beginning} of the next token.
-        \item \textsf{e} jump to the \textbf{end} of the next token.
-        \item \textsf{b} jump to the \textbf{previous} token.
-        \item \textsf{\_} jump to the beginning of the line.
-        \item \textsf{\$} jump to the end of the line.
-        \item You can also combine those with numbers, try: \textsf{2b}, \textsf{5e}.
+        \item \highlight{w} jump to the \textbf{beginning} of the next token.
+        \item \highlight{e} jump to the \textbf{end} of the next token.
+        \item \highlight{b} jump to the \textbf{previous} token.
+        \item \highlight{\_} jump to the \textbf{beginning} of the line.
+        \item \highlight{\$} jump to the \textbf{end} of the line.
+        \item You can also combine those with numbers, try: \highlight{2b}, \highlight{5e}.
         \item TRY: do the challenge `./challenges/advanced\_motions.txt'.
     \end{itemize}
 \end{frame}
@@ -153,10 +155,10 @@
 \begin{frame}{MoreAdvancedHMotions}
     \frametitle{More Advanced Horizontal Motions}
     \begin{itemize}
-        \item \textsf{f} + `;' to jump to the next `;' char (can be replaced with any other char).
-        \item \textsf{t} + `;' to jump the char before the `;'.
+        \item \highlight{f} + `;' to jump to the next `;' char (can be replaced with any other char).
+        \item \highlight{t} + `;' to jump the char before the `;'.
         \item in these modes, you can type `;' to jump to the next occurace of this character.
-        \item \textsf{F} and \textsf{T} for the backward search.
+        \item \highlight{F} and \highlight{T} for the backward search.
         \item TRY: do the challenge `./challenges/to\_f\_motions.txt`
     \end{itemize}
 \end{frame}
@@ -165,11 +167,13 @@
 \begin{frame}{AdvancedVMotions}
     \frametitle{Advanced Vertical Motions}
     \begin{itemize}
-        \item \textsf{Ctrl} + \textsf{u} jump 35 lines up.
-        \item \textsf{Ctrl} + \textsf{d} jump 35 lines down.
-        \item \textsf{\{} to go up to the next blank line.
-        \item \textsf{\}} to go down to the next blank line.
-        \item TIP: use \textsf{zz} to center screen around cursor.
+        \item \highlight{Ctrl} + \highlight{u} jump 35 lines up.
+        \item \highlight{Ctrl} + \highlight{d} jump 35 lines down.
+        \item \highlight{\{} to go up to the next blank line.
+        \item \highlight{\}} to go down to the next blank line.
+        \item \highlight{gg} to go to the first line in the document.
+        \item \highlight{G} to go to the last line in the document.
+        \item TIP: use \highlight{zz} to center screen around cursor.
     \end{itemize}
 \end{frame}
 
@@ -177,13 +181,13 @@
 \begin{frame}{EnterEditing}
     \frametitle{Enter the Editing Mode}
     \begin{itemize}
-        \item \textsf{i} to \textsf{i}nsert before cursor.
-        \item \textsf{a} to insert \textsf{a}fter cursor.
-        \item \textsf{I} to \textsf{I}nsert at the beginnig of the line.
-        \item \textsf{A} to insert \textsf{a}t the end of the line.
-        \item \textsf{o} to start editing from the new line.
-        \item \textsf{O} to start editing from the previous line.
-        \item \textsf{Ctrl} + \textsf{C} or \textsf{Esc} to exit to normal mode.
+        \item \highlight{i} to \highlight{i}nsert before cursor.
+        \item \highlight{a} to insert \highlight{a}fter cursor.
+        \item \highlight{I} to \highlight{I}nsert at the beginnig of the line.
+        \item \highlight{A} to insert \highlight{a}t the end of the line.
+        \item \highlight{o} to start editing from the new line.
+        \item \highlight{O} to start editing from the previous line.
+        \item \highlight{Ctrl} + \highlight{C} or \highlight{Esc} to exit to normal mode.
         \item TRY: do the challenge `./challenges/basic\_editing.txt`.
     \end{itemize}
 \end{frame}
@@ -193,37 +197,49 @@
     \frametitle{Visual Mode}
     \begin{itemize}
         \item commonly used to highlight something in the text.
-        \item \textsf{v} in normal mode to enter the visual mode.
+        \item \highlight{v} in normal mode to enter the visual mode.
         \item you can use a number of shortcuts to select a token.
-        \item \textsf{viw} to highlight a word.
-        \item \textsf{V} to highlight the whole line.
+        \item \highlight{viw} to highlight a word.
+        \item \highlight{V} to highlight the whole line.
     \end{itemize}
 \end{frame}
 
 \section{Tips}
 \begin{frame}{VimTips}
-    \frametitle{Useful Tips}
+    \frametitle{Copy-Paste}
     \begin{itemize}
-        \item there are some very useful vim-combinations that we can use.
-        \item \textsf{diw} delete a token, stay in normal mode after.
-        \item \textsf{ciw} delete a token and enter the editing mode.
-        \item \textsf{daW} delets a token and its surrounding to the next token.
-        \item \textsf{caW} deletes a token and its surrounding to the next token, entering the edit mode.
-        \item \textsf{y} will copy under the cursor.
-        \item \textsf{p} will past what you copied.
-        \item \textsf{/} to find a token in the document.
+        \item vim does not use global clipboard for copy-paste operations.
+        \item \highlight{y} and \highlight{p} will only work within a document.
+        \item if you want to paste from the buffer, you need \highlight{Ctrl} + \highlight{Shift} + \highlight{v} combination.
+        \item TRY: use `./challenges/copyPaste.txt' to check out these motions.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{VimTips}
+    \frametitle{Copy/Cut and paste by token}
+    \begin{itemize}
+        \item There are some very useful vim-combinations that we can use.
+        \item \highlight{diw} delete a token, stay in normal mode after.
+        \item \highlight{ciw} delete a token and enter the editing mode.
+        \item \highlight{daW} delets a token and its surrounding to the next token.
+        \item \highlight{caW} deletes a token and its surrounding to the next token, entering the edit mode.
+        \item \highlight{y} will copy under the cursor.
+        \item \highlight{p} will past what you copied.
+        \item \highlight{/} to find a token in the document.
         \item TIP: use `.' to repeat the previous command.
         \item TRY: use `./challenges/editing\_patters.txt' to checkout these commands.
     \end{itemize}
 \end{frame}
 
 \begin{frame}{VimTips}
-    \frametitle{Copy-Paste}
+    \frametitle{Copy/Cut and paste by paragraph}
     \begin{itemize}
-        \item vim does not use global clipboard for copy-paste operations.
-        \item \textsf{y} and \textsf{p} will only work within a document.
-        \item if you want to paste from the buffer, you need \textsf{Ctrl} + \textsf{Shift} + \textsf{v} combination.
-        \item TRY: use `./challenges/copyPaste.txt' to check out these motions.
+        \item Often, you need to remove the whole block (paragraph) .
+        \item \highlight{dip} delete a token, stay in normal mode after.
+        \item \highlight{cip} delete a token and enter the editing mode.
+        \item \highlight{daP} delets a token and its surrounding to the next token.
+        \item \highlight{caP} deletes a token and its surrounding to the next token, entering the edit mode.
+        \item TRY: use `./challenges/blockRemoval.txt' to checkout these commands.
     \end{itemize}
 \end{frame}
 
@@ -231,8 +247,8 @@
     \frametitle{Search and Replace}
     \begin{itemize}
         \item you can search and replace using a combination in the normal mode.
-        \item \textsf{:\%s/!/?/g} will replace all `!' with `?', globally.
-        \item \textsf{:\%s/!/?/gc} will replace and ask you whether you want to replace.
+        \item \highlight{:\%s/!/?/g} will replace all `!' with `?', globally.
+        \item \highlight{:\%s/!/?/gc} will replace and ask you whether you want to replace.
         \item TRY: the `./searchAndReplace.txt' for exercise.
     \end{itemize}
 \end{frame}
