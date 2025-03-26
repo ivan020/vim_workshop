@@ -1,0 +1,15 @@
+Press 'yy' to copy the whole line, including the new line char ('\n').
+Then press 'p' to paste the copied block.
+
+==============================================================
+^^^^ yank the above and paste after this sentence by pressing.
+
+
+Press 'dd' to remove a line, including the new line char ('\n').
+Then press 'p' to paste the removed line.
+
+================================================================
+================================================================
+^^^^ remove the above and paste after this sentence by pressing.
+
+
