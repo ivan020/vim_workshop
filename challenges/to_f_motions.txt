@@ -1,0 +1,15 @@
+You can use 'f' to find the next occurance of a key ('F' to find the previous occurance of that key).
+TIP: remember that you can press '_' and '$' to jump to the beginning/end of a line if you are missplaced.
+
+=====================================================================================================
+Press 'f' and '$' and then ';' to jump to this symbol: $;
+$: now press 'F' and then '$' and ';' again to jump to the very beginning of this line at symbol '$';
+=====================================================================================================
+
+You can also use 't' to jump to the next occurance of a key ('T' to find the previous occurance).
+
+============================================================================================================
+If you press 't' and then '!' and ';', you should see your cursor moving stopping right at empty space--> !;
+! <-- is where your cursor should be had you pressed the 'T' then '!' and ';' from the end of that line;
+============================================================================================================
+
