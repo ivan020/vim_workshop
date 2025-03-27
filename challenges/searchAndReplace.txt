@@ -1,6 +1,8 @@
 This dialogue makes no sense because of exclamation mark, so lets fix it.
 REMEMBER the command (in NORMAL mode) is '/'.
 
+TRY: :%s/!/?/gc
+
 ============================================================
 Person 1: Hey, do you want to grab lunch later!
 Person 2: I’d love to! What time are you thinking!
