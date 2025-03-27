@@ -3,6 +3,8 @@ Follow the instructions to decypher it.
 
 w2l, wl, 12w, 4bl,6b3l, 4e, 3b5l, 3e3h, 2b4l, 8e;
 
+=========================================================================================================================
 This simingly random mambo-jambo contains a very secret message that you can decode by following the propoer vim motions.
+=========================================================================================================================
 
-
+ANSWER: 
